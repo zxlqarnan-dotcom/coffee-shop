@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zulqarnain's Coffee</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ==== HEADER ==== -->
+<header class="header">
+    <div class="container nav">
+        <img src="images/logo.png" alt="Infinity Coffee Logo" class="logo">
+        
+        <nav class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Menu</a>
+            <a href="#">About Us</a>
+            <a href="#">Shop</a>
+            <a href="#">Contact</a>
+        </nav>
+
+        <!-- Search Icon -->
+        <div class="search-icon" id="searchIcon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+        </div>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-bar" id="searchBar">
+        <input type="text" placeholder="Search coffee, breakfast, beans..." id="searchInput">
+        <button id="closeSearch">×</button>
+    </div>
+</header>
+
+<!-- ==== HERO ==== -->
+<section class="hero">
+    <div class="hero-text">
+        <h1>TIME FOR A COFFEE</h1>
+        <p>Handcrafted with love. Best coffee in Pakistan.</p>
+        <button class="btn">Order Now</button>
+    </div>
+</section>
+
+<!-- ==== SERVICES ==== -->
+<section class="services container">
+    <h2>OUR SERVICES</h2>
+    <p class="subtitle">Fresh beans, perfect brews, warm breakfasts.</p>
+
+    <div class="grid">
+        <div class="card">
+            <img src="images/bean.jpg" alt="Bean">
+            <h3>PREMIUM BEANS</h3>
+            <p>100% Arabica from local farms.</p>
+        </div>
+        <div class="card">
+            <img src="images/latte.jpg" alt="Coffee">
+            <h3>COFFEE ART</h3>
+            <p>Latte, Cappuccino, Espresso.</p>
+        </div>
+        <div class="card">
+            <img src="images/waffle.jpg" alt="Breakfast">
+            <h3>BREAKFAST</h3>
+            <p>Waffles, toast, eggs.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ==== MENU ==== -->
+<section class="menu" style="background-image:url('images/menu-bg.jpg');">
+    <div class="container menu-inner">
+        <h2>MENU</h2>
+
+        <div class="menu-tabs">
+            <button class="tab active" data-tab="coffee">Coffee</button>
+            <button class="tab" data-tab="breakfast">Breakfast</button>
+        </div>
+
+        <div id="coffee" class="menu-list active">
+            <div class="item"><span>Espresso</span><span class="price">Rs. 350</span></div>
+            <div class="item"><span>Americano</span><span class="price">Rs. 400</span></div>
+            <div class="item"><span>Cappuccino</span><span class="price">Rs. 450</span></div>
+            <div class="item"><span>Latte</span><span class="price">Rs. 480</span></div>
+            <div class="item"><span>Cold Brew</span><span class="price">Rs. 550</span></div>
+        </div>
+
+        <div id="breakfast" class="menu-list">
+            <div class="item"><span>Belgian Waffle</span><span class="price">Rs. 650</span></div>
+            <div class="item"><span>Avocado Toast</span><span class="price">Rs. 720</span></div>
+            <div class="item"><span>Eggs Benedict</span><span class="price">Rs. 850</span></div>
+        </div>
+    </div>
+</section>
+
+<!-- ==== CONTACT ==== -->
+<section class="contact container">
+    <h2>CONTACT US</h2>
+    <p>Visit us or order online!</p>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+    </form>
+</section>
+
+<!-- WhatsApp Float Button -->
+<a href="https://wa.me/923001234567?text=Hi!%20I'd%20like%20to%20order." class="whatsapp-float" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="30">
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
